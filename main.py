@@ -5,10 +5,10 @@
 
 
 def main():
-    lst = list()
-    num = int(input("Intoduce el numero de valores que tendra la lista: "))
-    for x in range(num):
-        lst.append(int(input("Introduce el valor a tu lista: ")))
-    print(lst)
+    nombre = input("Introduce tu nombre: ")
+    apellido = input("Introduce tu apellido: ")
+    segundo = input("Introduce tu 2º apellido: ")
+
+    print("Este es tu codigo: ",apellido[:2],segundo[:2],nombre[:2])
 if __name__ == '__main__':
     main()
