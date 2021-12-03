@@ -7,7 +7,6 @@
     - contacto(bool)
 3. Retorna per cada registre per pantalla en format taula."""
 
-
 def main():
     #Ejercicio 2
     lst = list()
@@ -23,6 +22,21 @@ def main():
         lst.append(int(input("Introduce el telefono: ")))
         lst.append(int(input("Introduce la edad : ")))
         lst.append(bool(input("Introduce si te han contactado o no: ")))
-    print(lst)
+
+    if len(lst) == 4:
+        print(lst[:4])
+    elif len(lst) == 8:
+        print(lst[:4])
+        print(lst[4:8])
+    elif len(lst) == 12:
+        print(lst[:4])
+        print(lst[4:8])
+        print(lst[8:12])
+    else:
+        print(lst[:4])
+        print(lst[4:8])
+        print(lst[8:12])
+        print(lst[12:16])
+        print(lst[16:20])
 if __name__ == '__main__':
     main()
